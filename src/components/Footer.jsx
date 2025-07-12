@@ -9,7 +9,7 @@ const Footer = () => {
         </p>
         <div className="flex space-x-4 text-sm font-medium">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/sahillodha19/"
             className="hover:text-gold transition-colors"
             target="_blank"
             rel="noreferrer"
@@ -17,7 +17,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/sahillodha/"
             className="hover:text-gold transition-colors"
             target="_blank"
             rel="noreferrer"
