@@ -13,7 +13,7 @@ const Home = () => {
           <img
             src={profileImage}
             alt="Sahil Lodha"
-            className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-120 xl:h-120 rounded-full border-4 border-gold shadow-2xl object-cover"
+            className="w-[270px] h-[270px] sm:w-[270px] sm:h-[270px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-120 xl:h-120 rounded-full border-4 border-gold shadow-2xl object-cover"
           />
         </div>
 

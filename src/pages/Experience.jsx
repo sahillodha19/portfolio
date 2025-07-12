@@ -4,7 +4,7 @@ const experiences = [
   {
     company: "Walkwel Technology",
     role: "Associate Software Developer",
-    duration: "Jan 2023 – Present",
+    duration: "Dec 2023 – Present",
     description: (
       <>
         <ul className="list-disc pl-5 space-y-2 text-darkNavy dark:text-textDark">
