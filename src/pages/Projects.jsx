@@ -16,6 +16,22 @@ const projects = [
     tech: ["PHP", "Laravel", "MySQL", "Bootstrap", "Twilio"],
     github: null,
     demo: "https://app.rapidclaim.ai",
+  },
+  {
+    title: "Tic Tac Toe – React Game",
+    description:
+      "A responsive Tic Tac Toe game built in React with options to play solo against computer or with another player. Learnt about React hooks and state management while building this project. This project is a great example of how to manage game state.",
+    tech: ["React", "JavaScript", "CSS"],
+    github: "https://github.com/sahillodha19/tic-tac-toe",
+    demo: "https://tic-tac-toe-delta-nine-12.vercel.app/",
+  } ,
+  {
+    title: "Portfolio Website",
+    description:
+      "A sleek and fully responsive developer portfolio built with React and Tailwind CSS, showcasing projects, skills, resume, and contact functionality.",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    github: "https://github.com/sahillodha19/portfolio",
+    demo: "https://portfolio-inky-zeta-23.vercel.app/",
   }
 ];
 

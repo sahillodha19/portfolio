@@ -9,6 +9,7 @@ import Projects from './pages/Projects.jsx'
 import Skills from './pages/Skills.jsx'
 import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Education from './pages/Education.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
+        <Education />
         <Contact />
         {/* Other sections will go here */}
       </main>

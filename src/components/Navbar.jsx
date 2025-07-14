@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import useDarkMode from "../hooks/useDarkMode";
-import { Menu, X } from "lucide-react"; // you can install with: npm i lucide-react
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useDarkMode();
@@ -23,6 +23,15 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="/resume.pdf"
+              download
+              className="px-3 py-1 rounded border border-gold text-gold hover:bg-gold hover:text-white transition text-sm"
+            >
+              📄 Resume
+            </a>
+          </li>
           <li>
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -59,19 +68,29 @@ const Navbar = () => {
                 <a
                   href={`#${item}`}
                   className="text-darkNavy dark:text-textDark hover:text-gold transition"
-                  onClick={() => setMenuOpen(false)} // close menu on click
+                  onClick={() => setMenuOpen(false)}
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </a>
               </li>
             ))}
             <li>
+              <a
+                href="/resume.pdf"
+                download
+                onClick={() => setMenuOpen(false)}
+                className="block w-full text-center px-3 py-2 rounded border border-gold text-gold hover:bg-gold hover:text-white transition text-sm"
+              >
+                📄 Download Resume
+              </a>
+            </li>
+            <li>
               <button
                 onClick={() => {
                   setDarkMode(!darkMode);
                   setMenuOpen(false);
                 }}
-                className="mt-4 w-full px-3 py-2 rounded border border-gold text-gold hover:bg-gold hover:text-white transition text-sm"
+                className="w-full px-3 py-2 rounded border border-gold text-gold hover:bg-gold hover:text-white transition text-sm"
               >
                 {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
               </button>
