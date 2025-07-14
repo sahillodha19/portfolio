@@ -18,12 +18,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-white dark:bg-darkMatte py-20 px-6 transition-colors duration-300">
+    <section
+      id="contact"
+      className="bg-lightGray dark:bg-darkSurface py-20 px-6 transition-colors duration-300"
+    >
       <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-darkNavy dark:text-textDark mb-8">📬 Contact Me</h2>
+        <h2 className="text-3xl font-bold text-darkNavy dark:text-textDark mb-8">
+          📬 Contact Me
+        </h2>
         <form
           onSubmit={handleSubmit}
-          className="bg-lightGray dark:bg-darkSurface p-6 rounded-xl shadow-md text-left space-y-4"
+          className="bg-white dark:bg-darkMatte p-6 rounded-xl shadow-md text-left space-y-4"
         >
           <input
             type="text"
@@ -32,7 +37,7 @@ const Contact = () => {
             value={form.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 rounded bg-white dark:bg-darkMatte text-darkNavy dark:text-textDark border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full px-4 py-2 rounded bg-white dark:bg-darkSurface text-darkNavy dark:text-textDark border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gold"
           />
           <input
             type="email"
@@ -41,7 +46,7 @@ const Contact = () => {
             value={form.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 rounded bg-white dark:bg-darkMatte text-darkNavy dark:text-textDark border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full px-4 py-2 rounded bg-white dark:bg-darkSurface text-darkNavy dark:text-textDark border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gold"
           />
           <textarea
             name="message"
@@ -50,7 +55,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             rows="4"
-            className="w-full px-4 py-2 rounded bg-white dark:bg-darkMatte text-darkNavy dark:text-textDark border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gold"
+            className="w-full px-4 py-2 rounded bg-white dark:bg-darkSurface text-darkNavy dark:text-textDark border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gold"
           ></textarea>
           <button
             type="submit"
